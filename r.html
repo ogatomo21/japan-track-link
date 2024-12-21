@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan Track Link</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.2/css/bulma.min.css"
+    integrity="sha512-RpeJZX3aH5oZN3U3JhE7Sd+HG8XQsqmP3clIbu4G28p668yNsRNj3zMASKe1ATjl/W80wuEtCx2dFA8xaebG5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./r.css">
+  <script src="./r.js"></script>
+</head>
+
+<body>
+  <section class="hero is-light">
+    <div class="hero-body">
+      <p class="title">
+        <a href="./index.html">荷物追跡システム</a>
+      </p>
+      <p class="subtitle">by ogatomo21</p>
+    </div>
+  </section>
+  <div class="app m-6">
+    <div class="trackingNumberContainer mb-5">
+      <p class="subtitle">荷物の追跡番号は</p>
+      <p id="trackingNumber" class="title"></p>
+      <p class="subtitle">です。</p>
+    </div>
+    <div class="shippingCompanyContainer">
+      <h2 class="title">運送会社選択</h2>
+      <p>追跡する運送会社を選択してください。</p>
+      <div class="shippingCompanyGrid mt-5">
+        <div class="shippingCompany card">
+          <a id="japanLink" href="">
+            <div class="card-image">
+              <figure class="image is-square">
+                <img src="./logo/japan.png" alt="日本郵便" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <p>日本郵便</p>
+            </div>
+          </a>
+        </div>
+        <div class="shippingCompany card">
+          <a id="yamatoLink" href="">
+            <div class="card-image">
+              <figure class="image is-square">
+                <img src="./logo/yamato.png" alt="ヤマト運輸" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <p>ヤマト運輸</p>
+            </div>
+          </a>
+        </div>
+        <div class="shippingCompany card">
+          <a id="sagawaLink" href="">
+            <div class="card-image">
+              <figure class="image is-square">
+                <img src="./logo/sagawa.png" alt="佐川急便" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <p>佐川急便</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <h2 class="title mt-5">受け取る荷物に追加</h2>
+    <div class="field has-addons">
+      <div class="control">
+        <div class="select is-fullwidth">
+          <select id="baggageAddCompany">
+            <option value="japan">日本郵便</option>
+            <option value="yamato">ヤマト運輸</option>
+            <option value="sagawa">佐川急便</option>
+          </select>
+        </div>
+      </div>
+      <div class="control">
+        <button id="baggageAdd" class="button is-link">追加する</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; Tomoya Ogawa 2024</p>
+    </div>
+  </footer>
+</body>
+
+</html>
